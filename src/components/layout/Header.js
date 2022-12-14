@@ -45,7 +45,7 @@ const Header = () => {
       <Container>
         <Flex className="flex items-center justify-between">
           <div>
-            <Dropdown className="relative" dropref={categoryRef}>
+            <Dropdown className="relative z-50" dropref={categoryRef}>
               <p className="flex items-center gap-x-2.5 ">
                 {" "}
                 <HiOutlineBars2 className="text-black" />{" "}
@@ -98,7 +98,7 @@ const Header = () => {
           </div>
           <div>
             <Flex className="flex items-center gap-x-10 max-md:gap-x-8 max-sm:gap-x-6">
-              <Dropdown className="relative" dropref={userRef}>
+              <Dropdown className="relative z-50" dropref={userRef}>
                 <div className="flex items-center">
                   <FaUserAlt />
                   <RxTriangleDown />
@@ -120,7 +120,7 @@ const Header = () => {
               </Dropdown>
 
               <div>
-                <Dropdown className="relative" dropref={cartRef}>
+                <Dropdown className="relative z-50" dropref={cartRef}>
                   <div>
                     <FaShoppingCart className="text-xl" />
                   </div>
@@ -144,7 +144,7 @@ const Header = () => {
                           </div>
                         </Flex>
                       </div>
-                      <div className="p-5">
+                      <div className="p-5 bg-white">
                         <p className="mb-3 font-dm text-base text-[#767676]">
                           Subtotal:{" "}
                           <span className="font-bold text-primary">$44.00</span>
