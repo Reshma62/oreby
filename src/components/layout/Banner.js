@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "slick-carousel/slick/slick.css";
 import Slider from "react-slick";
 import Images from "./Images";
+import { Link } from "react-router-dom";
 const Banner = () => {
   const [activeDots, setActiveDots] = useState(0);
   const settings = {
@@ -97,15 +98,21 @@ const Banner = () => {
   };
   return (
     <Slider {...settings}>
-      <div>
-        <Images imgSrc="assests/banner.png" />
-      </div>
-      <div>
-        <Images imgSrc="assests/banner.png" />
-      </div>
-      <div>
-        <Images imgSrc="assests/banner.png" />
-      </div>
+      <Link to="#">
+        <div>
+          <Images imgSrc="assests/banner.png" />
+        </div>
+      </Link>
+      <Link to="#">
+        <div>
+          <Images imgSrc="assests/banner.png" />
+        </div>
+      </Link>
+      <Link to="#">
+        <div>
+          <Images imgSrc="assests/banner.png" />
+        </div>
+      </Link>
     </Slider>
   );
 };

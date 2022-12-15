@@ -24,38 +24,38 @@ const Navbar = () => {
   return (
     <nav>
       <Container>
-        <Flex className="flex flex-col lg:flex-row py-8 ">
+        <Flex className="flex flex-col py-8 max-md:py-4 lg:flex-row items-center">
           <div className="w-full lg:w-2/5 ">
             <Images imgSrc="assests/logo.png" />
           </div>
-          <div className="w-full lg:w-3/5 mt-5 lg:mt-0 bg-slate-500 lg:bg-transparent">
-            <div className="text-lg flex justify-end lg:hidden absolute top-8 right-3">
+          <div className="mt-5 w-full bg-slate-500 lg:mt-0 lg:w-3/5 lg:bg-transparent">
+            <div className="absolute top-8 right-3 flex justify-end text-lg max-md:top-4 lg:hidden">
               <RiBarChartHorizontalFill onClick={() => setShow(!show)} />
             </div>
             {show && (
-              <List className="inline-block gap-x-10 justify-end lg:flex pl-5 lg:pl-0 py-2.5 lg:py-0 ">
+              <List className="inline-block justify-end gap-x-10 py-2.5 pl-5 lg:flex lg:py-0 lg:pl-0 ">
                 <ListItem
-                  className="font-dm text-sm font-bold hover:font-bold text-white lg:text-[#262626] mb-2 lg:mb-0 before:block before:content-[attr(title)] before:invisible  before:overflow-hidden before:h-0 before:font-bold "
+                  className="mb-2 font-dm text-sm font-bold text-white before:invisible before:block before:h-0 before:overflow-hidden before:font-bold before:content-[attr(title)]  hover:font-bold lg:mb-0 lg:text-[#262626] "
                   itemName="Home"
                   title="Home"
                 />
                 <ListItem
-                  className="text-white lg:text-[#767676] hover:lg:text-[#262626] font-dm text-sm font-normal hover:font-bold  mb-2 lg:mb-0 before:block before:content-[attr(title)] before:invisible  before:overflow-hidden before:h-0 before:font-bold "
+                  className="mb-2 font-dm text-sm font-normal text-white before:invisible before:block  before:h-0 before:overflow-hidden before:font-bold before:content-[attr(title)] hover:font-bold  lg:mb-0 lg:text-[#767676] hover:lg:text-[#262626] "
                   itemName="Shop"
                   title="Shop"
                 />
                 <ListItem
-                  className="text-white lg:text-[#767676] font-dm text-sm font-normal hover:font-bold mb-2 lg:mb-0 hover:lg:text-[#262626] before:block before:content-[attr(title)] before:invisible  before:overflow-hidden before:h-0 before:font-bold "
+                  className="mb-2 font-dm text-sm font-normal text-white before:invisible before:block before:h-0 before:overflow-hidden before:font-bold before:content-[attr(title)] hover:font-bold  lg:mb-0 lg:text-[#767676] hover:lg:text-[#262626] "
                   itemName="About"
                   title="About"
                 />
                 <ListItem
-                  className=" text-white lg:text-[#767676] font-dm text-sm font-normal hover:font-bold mb-2 lg:mb-0 hover:lg:text-[#262626] before:block before:content-[attr(title)] before:invisible  before:overflow-hidden before:h-0 before:font-bold "
+                  className=" mb-2 font-dm text-sm font-normal text-white before:invisible before:block before:h-0 before:overflow-hidden before:font-bold before:content-[attr(title)] hover:font-bold  lg:mb-0 lg:text-[#767676] hover:lg:text-[#262626] "
                   itemName="Contacts"
                   title="Contacts"
                 />
                 <ListItem
-                  className="text-white lg:text-[#767676] font-dm text-sm font-normal hover:font-bold hover:lg:text-[#262626] before:block before:content-[attr(title)] before:invisible  before:overflow-hidden before:h-0 before:font-bold "
+                  className="font-dm text-sm font-normal text-white before:invisible before:block before:h-0 before:overflow-hidden before:font-bold before:content-[attr(title)]  hover:font-bold lg:text-[#767676] hover:lg:text-[#262626] "
                   itemName="Journal"
                   title="Journal"
                 />
