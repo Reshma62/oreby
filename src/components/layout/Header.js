@@ -144,7 +144,7 @@ const Header = () => {
                           </div>
                         </Flex>
                       </div>
-                      <div className="p-5 bg-white">
+                      <div className="bg-white p-5">
                         <p className="mb-3 font-dm text-base text-[#767676]">
                           Subtotal:{" "}
                           <span className="font-bold text-primary">$44.00</span>

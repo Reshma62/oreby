@@ -28,6 +28,7 @@ const Navbar = () => {
           <div className="w-full lg:w-2/5 ">
             <Images imgSrc="assests/logo.png" />
           </div>
+          
           <div className="mt-5 w-full bg-slate-500 lg:mt-0 lg:w-3/5 lg:bg-transparent">
             <div className="absolute top-8 right-3 flex justify-end text-lg max-md:top-4 lg:hidden">
               <RiBarChartHorizontalFill onClick={() => setShow(!show)} />

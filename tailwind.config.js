@@ -1,9 +1,14 @@
 /** @type {import('tailwindcss').Config} */
-const defaultTheme = require("tailwindcss/defaultTheme");
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
+      screens: {
+        lgmy: "992px",
+        // => @media (min-width: 992px) { ... }
+        myTab: "1100px",
+        // "2xl45": { max: "1535px" },
+      },
       maxWidth: {
         container: "1604px",
       },
@@ -15,5 +20,6 @@ module.exports = {
       },
     },
   },
+
   plugins: [],
 };
