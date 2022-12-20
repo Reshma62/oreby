@@ -7,7 +7,7 @@ import Images from "./Images";
 
 const Footer = () => {
   return (
-    <div className="mt-36 bg-[#F5F5F3] py-14">
+    <div className="max-myTab:mt-10 mt-36 bg-[#F5F5F3] max-sm:py-5 py-14">
       <Container>
         <Flex className="flex justify-between max-lgmy:flex-wrap max-lgmy:gap-y-8">
           <div className=" max-2xl:flex-[5_5_23%] w-[10%] max-myTab:flex-[1_1_20%] max-lgmy:flex-[33%] max-sm:flex-[45%]">
