@@ -7,6 +7,7 @@ import { BsFillGridFill, BsListStars } from "react-icons/bs";
 import Pagination from "../components/layout/Pagination";
 import Selected from "../components/layout/Selected";
 import Option from "../components/layout/Option";
+import LeftSidebar from "../components/layout/LeftSidebar";
 const Shop = () => {
 
   const [ showNumber, setShowNumber ] = useState( 12 );
@@ -25,7 +26,9 @@ const Shop = () => {
         </div>
 
         <Flex className={`mt-12 flex gap-x-10`}>
-          <div className="w-[25%] bg-red-500">jgjhfghjg</div>
+          <div className="w-[25%]">
+            <LeftSidebar/>
+          </div>
           <div className="relative w-[75%] ">
             <Flex className="mb-14 flex justify-between">
               <div className="flex gap-2">
