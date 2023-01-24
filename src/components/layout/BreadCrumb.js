@@ -1,10 +1,10 @@
 import React from 'react'
 
 import { FaAngleRight } from "react-icons/fa";
-const BreadCrumb = ({title}) => {
+const BreadCrumb = () => {
   return (
-    <>
-      <div className="mb-3 font-dm text-5xl font-bold capitalize text-primary">
+    <div className=" mt-5 lg:mt-32">
+      <div className="mb-3 font-dm text-lg lg:text-5xl font-bold capitalize text-primary">
         {window.location.pathname.split("/")[1]}
       </div>
       <div className="">
@@ -13,7 +13,7 @@ const BreadCrumb = ({title}) => {
           {window.location.pathname.split("/")[1]}
         </p>
       </div>
-    </>
+    </div>
   );
 }
 

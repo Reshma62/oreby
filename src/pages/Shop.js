@@ -40,7 +40,7 @@ const Shop = () => {
   }, []);
 
   return (
-    <div className=" mt-5 lg:mt-32">
+    <div>
       <Container>
         <BreadCrumb />
         <Flex className={` relative mt-5 block gap-x-10 sm:mt-12 sm:flex`}>
