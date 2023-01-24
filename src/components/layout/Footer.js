@@ -10,7 +10,7 @@ const Footer = () => {
     <div className="max-myTab:mt-10 mt-36 bg-[#F5F5F3] max-sm:py-5 py-14">
       <Container>
         <Flex className="flex justify-between max-lgmy:flex-wrap max-lgmy:gap-y-8">
-          <div className=" max-2xl:flex-[5_5_23%] w-[10%] max-myTab:flex-[1_1_20%] max-lgmy:flex-[33%] max-sm:flex-[45%]">
+          <div className=" max-2xl:flex-[5_5_23%] w-[10%] max-myTab:flex-[1_1_20%] max-lgmy:flex-[33%] max-sm:flex-[44%]">
             <h4 className="mb-4 font-dm text-base font-bold">MENU</h4>
             <List>
               <ListItem
@@ -40,7 +40,7 @@ const Footer = () => {
               />
             </List>
           </div>
-          <div className=" max-2xl:flex-[5_5_23%] w-[10%] max-myTab:flex-[1_1_20%] max-lgmy:flex-[33%] max-sm:flex-[45%]">
+          <div className=" max-2xl:flex-[5_5_23%] w-[10%] max-myTab:flex-[1_1_20%] max-lgmy:flex-[33%] max-sm:flex-[44%]">
             <h4 className="mb-4 font-dm text-base font-bold">SHOP</h4>
             <List>
               <ListItem
@@ -70,7 +70,7 @@ const Footer = () => {
               />
             </List>
           </div>
-          <div className=" max-2xl:flex-[5_5_23%] w-[10%] max-myTab:flex-[1_1_20%] max-lgmy:flex-[3_1_0%] max-sm:flex-[45%] ">
+          <div className=" max-2xl:flex-[5_5_23%] w-[10%] max-myTab:flex-[1_1_20%] max-lgmy:flex-[3_1_0%] max-sm:flex-[44%] ">
             <h4 className="mb-4 font-dm text-base font-bold">HELP</h4>
             <List>
               <ListItem
@@ -100,7 +100,7 @@ const Footer = () => {
               />
             </List>
           </div>
-          <div className=" max-2xl:flex-[5_5_23%] flex w-[30%] justify-center max-myTab:flex-[1_1_20%] max-lgmy:flex-[50%]  max-lgmy:justify-start max-sm:flex-[45%]">
+          <div className=" max-2xl:flex-[5_5_23%] flex w-[30%] justify-center max-myTab:flex-[1_1_20%] max-lgmy:flex-[50%]  max-lgmy:justify-start max-sm:flex-[40%]">
             <div>
               <h4 className="mb-4 font-dm text-base font-bold">
                 (052) 611-5711 <br /> company@domain.com

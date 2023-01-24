@@ -13,8 +13,8 @@ function Items({ currentItems }) {
   return (
     <>
       {currentItems &&
-        currentItems.map((item , index) => (
-          <div className="w-[32%]">
+        currentItems.map((item, index) => (
+          <div className=" max-sm:w-full w-[32%] max-myTab:w-[48%]">
             <Product badgeShow={false} imgSrc="assests/p1.png" />
           </div>
         ))}
@@ -38,20 +38,20 @@ const Pagination = ({ itemsPerPage }) => {
 
   return (
     <>
-      <div className="flex flex-wrap justify-between gap-y-8">
+      <div className=" block flex-wrap justify-between gap-y-8 sm:flex">
         <Items currentItems={currentItems} />
       </div>
       <ReactPaginate
         breakLabel="..."
-        breakClassName="page-item page-item py-2.5 px-5 inline-block border-solid border border-[#f0f0f0]"
+        breakClassName="page-item py-2 px-3 sm:py-2.5 sm:px-5 inline-block border-solid border border-[#f0f0f0]"
         breakLinkClassName="page-link"
         onPageChange={handlePageClick}
         pageRangeDisplayed={4}
         pageCount={pageCount}
         renderOnZeroPageCount={null}
-        containerClassName="flex gap-x-3.5 mt-5"
+        containerClassName="flex-wrap gap-y-3 sm:gap-y-0 flex gap-x-3.5 mt-5"
         activeClassName="bg-black text-white"
-        pageClassName=" page-item py-2.5 px-5 inline-block border-solid border border-[#f0f0f0]"
+        pageClassName=" page-item py-2 px-3 sm:py-2.5 sm:px-5 inline-block border-solid border border-[#f0f0f0]"
         pageLinkClassName="page-link"
         previousClassName="hidden"
         previousLinkClassName="page-link"
@@ -59,7 +59,7 @@ const Pagination = ({ itemsPerPage }) => {
         nextLinkClassName="hidden"
         marginPagesDisplayed={1}
       />
-      <p className="absolute bottom-0 right-0">
+      <p className="static bottom-0 right-0 mt-6 sm:absolute sm:mt-0">
         Products from {itemOffset} to {endOffset}, page no:{currentPage} of{" "}
         {items.length}
       </p>

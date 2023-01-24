@@ -19,7 +19,7 @@ const Header = () => {
   let categoryRef = useRef();
   let userRef = useRef();
   let cartRef = useRef();
- 
+
   useEffect(() => {
     document.body.addEventListener("click", (e) => {
       if (categoryRef.current.contains(e.target)) {
@@ -39,7 +39,7 @@ const Header = () => {
       }
     });
   }, []);
-  
+
   return (
     <div className="bg-[#F5F5F3] py-6">
       <Container>
